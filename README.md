@@ -51,13 +51,13 @@ O **alinhamento local** busca por região de alta similaridade entre subsequênc
 
 ![](https://raw.githubusercontent.com/vanleiko/meus-projetos/main/alinhamento-local.jpg)
 
-Para isso, o algoritm mais utilizado é o de **Smith-Waterman**, que produz uma solução ótima.
+Para isso, o algoritmo mais utilizado é o de **Smith-Waterman**, que produz uma solução ótima.
 
 ### Critério de pontuação
 
 Focarei agora no alinhamento global par a par.
 
-Os algoritmos de alinhamento analisam o ***score*** de cada alinhamento. O *score* é o resultado soma da pontuação para os ***matches*** (alinhamento de caracteres iguais), ***mismatches*** (alinhamento de caracteres diferentes), *gap opening* (abertura de lacuna)  e ***gaps*** (inserção ou deleção de caracteres), sendo que os *matches* são recompensados, enquanto *mismatches* e *gaps* são penalizados.
+Os algoritmos de alinhamento analisam o ***score*** de cada alinhamento. O *score* é o resultado soma da pontuação para os ***matches*** (alinhamento de caracteres iguais), ***mismatches*** (alinhamento de caracteres diferentes) e ***gaps*** (inserção ou deleção de caracteres), sendo que os *matches* são recompensados, enquanto *mismatches* e *gaps* são penalizados.
 
 Vamos analisar como ficaria o alinhamento entre as duas sequências abaixo:
 
@@ -73,7 +73,7 @@ Agora vamos analisar um alinhamento que permite *mismatches*, sendo este com pen
 ![](https://raw.githubusercontent.com/vanleiko/meus-projetos/main/com-mismatch.jpg)
 
 
-Podemos ver que o maior *score* está no alinhamento que permite *mismatches* (*score = 25*), sendo esse considerado um melhor alinhamento, isto porque a penalidade para *gap* é maior, visto que, do ponto de vista evolutivo, "há um maior custo" quando acontece uma deleção/inserção de caracter do que quando ocorre um troca de caracter.
+Podemos ver que o maior *score* está no alinhamento que permite *mismatches* (*score = 25*), sendo esse considerado um melhor alinhamento, isto porque a penalidade para *gap* é maior, visto que, do ponto de vista evolutivo, "há um maior custo" quando acontece uma deleção/inserção de caractere do que quando ocorre um troca de caractere.
 
 Não existe uma regra que determine qual deve ser a pontuação para *match, mismatch* e *gap* em alinhamento de nucleotídeos. Para proteínas, existem as **Matrizes de Substituição** (PAM, BLOSUM) as quais contêm as probabilidades das trocas ou manutenção dos aminoácidos.
 
