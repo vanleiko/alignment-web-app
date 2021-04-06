@@ -10,7 +10,7 @@ Meus principais interesses são bioinformática e ciência de dados.
 
 Uma das práticas mais comuns na bioinformática é o alinhamento de sequências biológicas (DNA, RNA e proteínas).
 
-![](meus-projetos/alinhamentos-capa.jpg)
+![](https://github.com/vanleiko/meus-projetos/blob/main/alinhamentos-capa.jpg)
 
 
 Mas por que isso é importante?
