@@ -73,10 +73,11 @@ Podemos ver que o maior *score* está no alinhamento que permite *mismatches* (*
 
 Não existe uma regra que determine qual deve ser a pontuação para *match, mismatch* e *gap* em alinhamento de nucleotídeos. Para proteínas, existem as **Matrizes de Substituição** (PAM, BLOSUM) as quais contêm as probabilidades das trocas ou manutenção dos aminoácidos.
 
-
 ### Aplicativo para alinhamento de sequências de DNA
 
 Diante dessas informações, construí uma [**aplicação web no Streamlit**](https://share.streamlit.io/vanleiko/dna-streamlit/main/src/app-dna-v2.py) que realiza o alinhamento global e local, par a par, de sequências de DNA, baseado nos algoritmos de Needleman-Wunsch e Smith-Waterman.
+
+![](https://raw.githubusercontent.com/vanleiko/meus-projetos/main/st-image.png)
 
 Além do alinhamento, esse *web app* também analisa a **Composição de Nucleotídeos** e o **Conteúdo GC** das sequências fornecidas, características importantes em estudos genéticos, evolutivos, taxonômicos e ecológico, uma vez que fornecem informações sobre o padrão de utilização dos códons, identificação de regiões gênicas, e auxiliam na síntese de vacinas de DNA e no desenho de primers.
 
