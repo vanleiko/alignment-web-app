@@ -85,7 +85,7 @@ Diante dessas informações, construí uma [**aplicação web no Streamlit**](ht
 
 Além do alinhamento, esse *web app* também analisa a **Composição de Nucleotídeos** e o **Conteúdo GC** das sequências fornecidas, características importantes em estudos genéticos, evolutivos, taxonômicos e ecológico, uma vez que fornecem informações sobre o padrão de utilização dos códons, identificação de regiões gênicas, e auxiliam na síntese de vacinas de DNA e no desenho de primers.
 
-👉 *O código da aplicação web pode ser acessado [aqui](https://github.com/vanleiko/dna-streamlit/blob/main/src/app-dna-v2.py).* 
+👉 *O código, em **Python**, da aplicação web pode ser acessado [aqui](https://github.com/vanleiko/dna-streamlit/blob/main/src/app-dna-v2.py).* 
 
 
 
