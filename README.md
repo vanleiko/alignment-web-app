@@ -10,7 +10,7 @@ Meus principais interesses são bioinformática e ciência de dados.
 
 Uma das práticas mais comuns na bioinformática é o alinhamento de sequências biológicas (DNA, RNA e proteínas).
 
-![](https://github.com/vanleiko/meus-projetos/blob/main/alinhamentos-capa.jpg)
+![](https://raw.githubusercontent.com/vanleiko/meus-projetos/main/alinhamentos-capa.jpg)
 
 Mas por que isso é importante?
 
@@ -24,11 +24,11 @@ Realizamos o alinhamento global quando o objetivo é alinhar toda a extensão da
 
 O alinhamento global pode ser par a par, quando alinhamos duas sequências
 
-![](https://github.com/vanleiko/meus-projetos/blob/main/alinhamentos-global-par.jpg)
+![](https://raw.githubusercontent.com/vanleiko/meus-projetos/main/alinhamento-global-par.jpg)
 
 ou múltiplo, quando três ou mais sequências são alinhadas
 
-![](https://github.com/vanleiko/meus-projetos/blob/main/alinhamentos-global-mul.jpg)
+![](https://raw.githubusercontent.com/vanleiko/meus-projetos/main/alinhamento-global.mul.jpg)
 
 
 
