@@ -1,12 +1,16 @@
-Olá! 😊
+Olá! 
 
 Meu nome é Vanessa, sou bióloga, e desde Agosto de 2020 venho aprendendo programação 💻 
 
-Resolvi reunir um em único lugar os projetos que venho desenvolvendo, com o objetivo de expor o que venho praticando, demonstrar o conhecimento e experiências que adquiri e poder contribuir na construção do conhecimento daqueles que também estão nesse caminho. 
+Minhas principais áreas de interesse são *Bioinformática* 🧬 e *Ciência de Dados* 🎲.
 
-Meus principais interesses são *bioinformática* 🧬 e *ciência de dados* 🎲.
+Nesse projeto, desenvolvi uma [**aplicação web no Streamlit**](https://share.streamlit.io/vanleiko/dna-streamlit/main/src/app-dna-v2.py) que realiza o **alinhamento de sequências de DNA**.
 
-# 1. Alinhamento de sequências de DNA 
+Abaixo encontra-se uma breve explicação sobre a importância e sobre como funciona o alinhamento de sequências biológicas.
+
+😊
+
+# Alinhamento de sequências de DNA 
 
 Uma das práticas mais comuns na bioinformática é o **alinhamento de sequências biológicas** (DNA, RNA e proteínas).
 
