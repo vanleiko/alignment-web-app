@@ -6,7 +6,7 @@ Resolvi reunir um em único lugar os projetos que venho desenvolvendo, com o obj
 
 Meus principais interesses são bioinformática e ciência de dados.
 
-#1. Alinhamento global de sequências de DNA
+# 1. Alinhamento global de sequências de DNA
 
 Uma das práticas mais comuns na bioinformática é o alinhamento de sequências biológicas (DNA, RNA e proteínas).
 
