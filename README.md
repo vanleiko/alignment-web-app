@@ -21,13 +21,13 @@ Uma das práticas mais comuns na bioinformática é o **alinhamento de sequênci
 O alinhamento busca por **regiões com similaridades** entre duas ou mais sequências, nos fornecendo informações sobre **relações funcionais, estruturais e evolutivas**. 
 
 Várias são as **aplicações** desse método, dentre elas:
-- montagem de genomas
-- descoberta de novas drogas
-- reconstrução da história evolutiva
-- buscas em bancos de dados
-- análise de variantes
-- dedução de função
-- definição de regiões conservadas
+- [x] montagem de genomas
+- [x] descoberta de novas drogas
+- [x] reconstrução da história evolutiva
+- [x] buscas em bancos de dados
+- [x] análise de variantes
+- [x] dedução de função
+- [x] definição de regiões conservadas
 
 O alinhamento de sequências pode ser global ou local, par a par ou múltiplo. 
 
