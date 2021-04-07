@@ -77,7 +77,7 @@ Agora vamos analisar um alinhamento que **permite** *mismatches*, sendo este com
 
 ![](https://raw.githubusercontent.com/vanleiko/meus-projetos/main/com-mismatch.jpg)
 
-A matriz é semelhante, com a diferença de que agora existe um *mismatch* entre "A" e "C:
+A matriz é semelhante, com a diferença de que agora existe um *mismatch* entre "A" e "C":
 
 ![](https://raw.githubusercontent.com/vanleiko/alignment-web-app/main/matriz-com-mismatch-traceback.png)
 
