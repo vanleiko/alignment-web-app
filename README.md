@@ -2,11 +2,11 @@ Olá!
 
 Meu nome é Vanessa, sou bióloga, e desde Agosto de 2020 venho aprendendo programação 💻 
 
-Minhas principais áreas de interesse são *Bioinformática* 🧬 e *Ciência de Dados* 🎲.
+Minhas principais áreas de interesse são *Bioinformática* 🧬 e *Ciência de Dados* 🎲
 
-Nesse projeto, desenvolvi uma [**aplicação web no Streamlit**](https://share.streamlit.io/vanleiko/dna-streamlit/main/src/app-dna-v2.py) que realiza o **alinhamento de sequências de DNA**.
+👉 Nesse projeto, desenvolvi uma [**aplicação web no Streamlit**](https://share.streamlit.io/vanleiko/dna-streamlit/main/src/app-dna-v2.py) que realiza o **alinhamento de sequências de DNA**.
 
-Abaixo encontra-se uma breve explicação sobre a importância e sobre como funciona o alinhamento de sequências biológicas.
+Abaixo encontra-se uma breve explicação sobre a importância e sobre os algoritmos de alinhamento de sequências biológicas.
 
 😊
 
@@ -18,7 +18,7 @@ Uma das práticas mais comuns na bioinformática é o **alinhamento de sequênci
 
 **Por que isso é importante?**
 
-O alinhamento busca por **regiões com similaridades** entre duas ou mais sequências, nos fornecendo informações sobre **relações funcionais, estruturais e evolutivas**. 
+O alinhamento busca por **regiões com similaridades** entre duas ou mais sequências, nos fornecendo informações sobre **relações funcionais, estruturais e evolutivas** dos e entre os seres vivos. 
 
 Várias são as **aplicações** desse método, dentre elas:
 - montagem de genomas
@@ -29,11 +29,13 @@ Várias são as **aplicações** desse método, dentre elas:
 - dedução de função
 - definição de regiões conservadas
 
-O alinhamento de sequências pode ser global ou local, par a par ou múltiplo. 
+O alinhamento de sequências pode ser:
+- global ou local
+- par a par ou múltiplo 
 
 ### Alinhamento global
 
-Realizamos o **alinhamento global** quando o objetivo é alinhar toda a extensão das sequências umas com as outras, ou seja, o alinhamento é realizado de ponta a ponta.
+Realizamos o **alinhamento global** quando o objetivo é alinhar toda a extensão das sequências, ou seja, o alinhamento é realizado de ponta a ponta.
 
 O alinhamento global pode ser **par a par**, quando alinhamos duas sequências:
 
@@ -43,7 +45,7 @@ ou **múltiplo**, quando três ou mais sequências são alinhadas:
 
 ![](https://raw.githubusercontent.com/vanleiko/meus-projetos/main/alinhamento-global.mul.jpg)
 
-O algoritmo mais utilizado para realizar o alinhamento global par a par é o de **Needleman-Wunsch**, que tem uma resolução ótima. Para o alinhamento múltiplo, o **CLUSTAL**, de Higgins-Sharp, é o mais utilizado, com uma resolução aproximada (heurística). 
+O algoritmo mais utilizado para realizar o alinhamento global par a par é o de **Needleman-Wunsch**, o qual tem uma resolução ótima. Para o alinhamento múltiplo, **CLUSTAL**, de Higgins-Sharp, é o algoritmo mais utilizado, com uma resolução aproximada (heurística). 
 
 ### Alinhamento local
 
@@ -55,13 +57,13 @@ Para isso, o algoritmo mais utilizado é o de **Smith-Waterman**, que produz uma
 
 ### Matriz de pontuação
 
-Os algoritmos de alinhamento par a par analisam o ***score*** de cada alinhamento. O *score* é o resultado da soma da pontuação para os ***matches*** (alinhamento de caracteres iguais), ***mismatches*** (alinhamento de caracteres diferentes) e ***gaps*** (inserção ou deleção de caracteres), sendo que os *matches* são recompensados, enquanto *mismatches* e *gaps* são penalizados.
+Os algoritmos de alinhamento par a par analisam o ***score*** de cada alinhamento. O *score* é o resultado da soma das pontuações para ***matches*** (alinhamento de caracteres iguais), ***mismatches*** (alinhamento de caracteres diferentes) e ***gaps*** (inserção ou deleção de caracteres), sendo que os *matches* são recompensados, enquanto *mismatches* e *gaps* são penalizados.
 
 Vamos analisar como ficaria o **alinhamento global** entre as duas sequências abaixo:
 
 ![](https://raw.githubusercontent.com/vanleiko/meus-projetos/main/sequencias.jpg)
 
-Primeiro, vamos considerar um alinhamento simples, em que *mismatches* **não são permitidos** e que a recompensa para *match* é +4 e a penalidade para *gap* é -3:
+Primeiro, vamos considerar um alinhamento mais simples, em que *mismatches* **não são permitidos**, e que a recompensa para *match* é +4 e a penalidade para *gap* é -3:
 
 ![](https://raw.githubusercontent.com/vanleiko/meus-projetos/main/sem-mismatch.jpg)
 
@@ -80,9 +82,9 @@ A matriz é semelhante, com a diferença de que agora existe um *mismatch* entre
 ![](https://raw.githubusercontent.com/vanleiko/alignment-web-app/main/matriz-com-mismatch-traceback.png)
 
 
-Podemos ver que o maior *score* está no alinhamento que permite *mismatches* (*score = 25*), sendo esse considerado um melhor alinhamento. Isto porque a penalidade para *gap* é maior, visto que, do ponto de vista evolutivo, "há um maior custo" quando acontece uma deleção/inserção de caractere do que quando ocorre um troca de caractere.
+Podemos ver que o maior *score* está no alinhamento que permite *mismatches* (*score = 25*), sendo esse considerado um melhor alinhamento. Isto porque a penalidade para *gap* é maior visto que, do ponto de vista evolutivo, "há um maior custo" quando acontece uma deleção/inserção de caractere do que quando ocorre uma troca de caractere.
 
-Para o **alinhamento local**, o algoritmo de Smith-Waterman é uma modificação do de Needleman-Wunsch para que sempre que uma pontuação fica com valor negativo, a matriz é reiniciada por zero. Além disso, o *tracebacking* não começa pelo último valor, mas sim pelo **maior valor** da matriz, e termina quando encontra uma pontuação igual a zero. 
+Para o **alinhamento local**, o algoritmo de Smith-Waterman é uma modificação do de Needleman-Wunsch para que sempre que uma pontuação fica com valor negativo, a matriz é reiniciada com zero. Além disso, o *tracebacking* não começa pelo último valor, mas sim pelo **maior valor** da matriz, e termina quando encontra uma pontuação igual a zero. 
 O alinhamento local abaixo teria a seguinte matriz:
 
 ![](https://raw.githubusercontent.com/vanleiko/alignment-web-app/main/alinhamento-local.jpg)
@@ -90,7 +92,7 @@ O alinhamento local abaixo teria a seguinte matriz:
 ![](https://raw.githubusercontent.com/vanleiko/alignment-web-app/main/matriz-local-traceback.png)
 
 
-Não existe uma regra que determine qual deve ser a pontuação para *match, mismatch* e *gap* em alinhamento de nucleotídeos. Para proteínas, existem as **Matrizes de Substituição** (PAM, BLOSUM) as quais contêm as probabilidades das trocas ou manutenção dos aminoácidos.
+Não existe uma regra que determine qual deve ser a pontuação para *match, mismatch* e *gap* em alinhamento de nucleotídeos. Para alinhamento de proteínas, existem as **Matrizes de Substituição** (PAM, BLOSUM) as quais contêm as probabilidades das trocas ou manutenção dos aminoácidos.
 
 ### Aplicativo para alinhamento de sequências de DNA
 
@@ -98,6 +100,6 @@ Diante dessas informações, construí uma [**aplicação web no Streamlit**](ht
 
 ![](https://raw.githubusercontent.com/vanleiko/meus-projetos/main/st-image.png)
 
-Além do alinhamento, esse *web app* também analisa a **Composição de Nucleotídeos** e o **Conteúdo GC** das sequências fornecidas, características importantes em estudos genéticos, evolutivos, taxonômicos e ecológico, uma vez que fornecem informações sobre o padrão de utilização dos códons, identificação de regiões gênicas, e auxiliam na síntese de vacinas de DNA e no desenho de primers, por exemplo.
+Além do alinhamento, esse *web app* também analisa a **Composição de Nucleotídeos** e o **Conteúdo GC** das sequências fornecidas, características importantes em estudos genéticos, evolutivos, taxonômicos e ecológicos, uma vez que fornecem informações sobre o padrão de utilização dos códons, identificação de regiões gênicas, e auxiliam na síntese de vacinas de DNA e no desenho de primers, por exemplo.
 
 👉 *O código, em **Python**, da aplicação web pode ser acessado [aqui](https://github.com/vanleiko/dna-streamlit/blob/main/src/app-dna-v2.py).* 
