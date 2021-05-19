@@ -1,6 +1,6 @@
 👉 Nesse projeto, desenvolvi uma **aplicação web no Streamlit**, a qual pode ser acessada [clicando aqui,](https://share.streamlit.io/vanleiko/dna-streamlit/main/src/app-dna-v2.py) que realiza o **alinhamento de sequências de DNA**.
 
-👉 *O código, em **Python**, da aplicação web pode ser acessado [aqui](https://github.com/vanleiko/dna-streamlit/blob/main/src/app-dna-v2.py).* 
+👉 O código, em **Python**, da aplicação web pode ser acessado [aqui](https://github.com/vanleiko/dna-streamlit/blob/main/src/app-dna-v2.py). 
 
 Abaixo encontra-se uma breve explicação sobre a importância e sobre os algoritmos de alinhamento de sequências biológicas.
 
